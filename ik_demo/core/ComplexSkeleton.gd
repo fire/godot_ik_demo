@@ -11,10 +11,6 @@ func stop_touch():
 func stop_all_ik():
 	$"Skeleton3/SkeletonIK".stop()
 
-#
-#
-# MOVEMENT
-
 func _physics_process(delta):
 	
 	var dir = Vector3() # Where does the player intend to walk to

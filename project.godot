@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="IK Demo"
-run/main_scene="res://ik_demo/scenes/TestPlayerIKScene.tscn"
+run/main_scene="res://ik_demo/scenes/IKReachTarget.tscn"
 config/icon="res://icon.png"
 
 [gdnative]
