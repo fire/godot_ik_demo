@@ -70,14 +70,6 @@ transform = Transform( 0.931716, 0.236678, -0.275479, -0.0193531, 0.78978, 0.613
 [node name="ComplexSkeleton" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.142211, 0, 2.34611 )
 
-[node name="Skeleton3" parent="ComplexSkeleton" index="0"]
-bones/36/rest = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.283, 0, 5.62519e-07 )
-
-[node name="SkeletonIK" parent="ComplexSkeleton/Skeleton3" index="2"]
-process_priority = 1
-tip_bone = "mixamorig_RightHand"
-target_node = NodePath("../../../IK_Target")
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 3 )
 
@@ -114,5 +106,3 @@ mesh = SubResource( 11 )
 material/0 = null
 [connection signal="body_entered" from="WallButton" to="WallButton" method="_on_WallButton_body_entered"]
 [connection signal="body_exited" from="WallButton" to="WallButton" method="_on_WallButton_body_exited"]
-
-[editable path="ComplexSkeleton"]
