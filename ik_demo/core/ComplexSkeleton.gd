@@ -1,7 +1,7 @@
 extends KinematicBody
 
 func touch_with_right_hand(target_node):
-	$"Skeleton3/SkeletonIK".set_target_node(target_node.get_path())
+	$"xbot/Armature/Skeleton/SkeletonIK".set_target_node(target_node.get_path())
 	$AnimationPlayer.play("ik")
 	
 func stop_touch():
@@ -9,7 +9,7 @@ func stop_touch():
 	stop_all_ik() # Mandatory because animation player was interrupted
 	
 func stop_all_ik():
-	$"Skeleton3/SkeletonIK".stop()
+	$"xbot/Armature/Skeleton/SkeletonIK".stop()
 
 #
 #
